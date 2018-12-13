@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name= name"author" content="Alisha Boatswain">
-  </head>
-<body>
-  <header>
-    <div>
-    <div class="logo">
-      <img src="./images/test8.png" style="width:40%">
-    </div>
-  <slider>
-    <slider>
-      <img src="./images/test.jpg" style="width:100%" alt="Nature" class="responsive">
-    </slider>
-    <slider>
-      <img src="./images/test2.jpg" style="width:100%">
-    </slider>
-    <slider>
-      <img src="./images/test3.png" style="width:100%">
-    </slider>
-  </slider>
-</header>
-  <input type="text" placeholder="Search..">
-
-<div class="dropdown">
-<button class="dropbtn">Artists</button>
-<div class="dropdown-content">
-  <a href="#Kaiit">Kaiit</a>
-  <a href="#Tiana">Tiana</a>
-  <a href="#Sonder">Sonder</a>
-</div>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name= name"author" content="Alisha Boatswain">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Layout with Scrollable Content View | Codrops</title>
+		<meta name="description" content="A Masonry-powered grid layout with a motion hover effect on the grid items and a scrollable content view." />
+		<meta name="keywords" content="masonry, grid layout, hover effect, content preview, javascript, gsap, template, web design" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" rel="text/css" href="css/styles.css"/>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<header>
+		<div class="logo">
+		<img src="img/test8.png" style="width:50%">
+	</div>
+	</header>
+	<body class="loading">
+			<div class="grid-wrap">
+				<div class="grid">
+					<a href="https://www.instagram.com/kaiit_isshe/?hl=en" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/test.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Kaiit</h3>
+						<h4 class="grid__item-number">B05</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/test2.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Tiana</h3>
+						<h4 class="grid__item-number">A21</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/test3.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Sonder</h3>
+						<h4 class="grid__item-number">XB3</h4>
+					</a>
+				</div>
+				<button class="content__close">Close</button>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
 </html>
