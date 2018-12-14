@@ -5,6 +5,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	box-sizing: border-box;
 }
 
+
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+  width: 50%;
+  height: 60px;
+}
+
+
+
+
 body {
 	--color-text: #4800d4;
     --color-bg: #e8e8e8;
